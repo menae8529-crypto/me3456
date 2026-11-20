@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Glow | Accessories Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Rose Glow</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Elegance in Every Detail</h1>
+            <p>Discover beautiful accessories made to shine with you.</p>
+            <a href="#shop" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop">
+        <div class="section-title">
+            <h2>Our Collection</h2>
+            <p>Discover your favorite pieces</p>
+        </div>
+
+        <div class="product-grid">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80" alt="Golden Necklace">
+                <h3>Golden Necklace</h3>
+                <p>Elegant everyday necklace</p>
+                <div class="price">85 SAR</div>
+                <a href="#contact" class="btn">Order Now</a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=700&q=80" alt="Elegant Bracelet">
+                <h3>Elegant Bracelet</h3>
+                <p>A touch of luxury</p>
+                <div class="price">65 SAR</div>
+                <a href="#contact" class="btn">Order Now</a>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80" alt="Pearl Earrings">
+                <h3>Pearl Earrings</h3>
+                <p>Simple and timeless beauty</p>
+                <div class="price">55 SAR</div>
+                <a href="#contact" class="btn">Order Now</a>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=80" alt="Gold Ring">
+                <h3>Classic Gold Ring</h3>
+                <p>Minimal and stylish design</p>
+                <div class="price">75 SAR</div>
+                <a href="#contact" class="btn">Order Now</a>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80" alt="Luxury Watch">
+                <h3>Luxury Watch</h3>
+                <p>Classic style for every occasion</p>
+                <div class="price">150 SAR</div>
+                <a href="#contact" class="btn">Order Now</a>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80" alt="Fashion Handbag">
+                <h3>Mini Handbag</h3>
+                <p>Your perfect daily accessory</p>
+                <div class="price">120 SAR</div>
+                <a href="#contact" class="btn">Order Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Rose Glow</h2>
+        <p>
+            Rose Glow is an accessories store created for women who love
+            beauty, elegance, and unique details.
+            We believe that the right accessory makes every moment special.
+            Explore our collection and find your perfect style.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you!</p>
+        <p>Email: roseglow.store@gmail.com</p>
+        <p>Instagram: @roseglow.store</p>
+        <a href="#home" class="btn">Back to Home</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Rose Glow. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+/* ===== General Settings ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FBF7F4;
+    color: #3D3330;
+}
+
+/* ===== Navigation Bar ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #B77C72;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3D3330;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #B77C72;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    min-height: 80vh;
+    background:
+        linear-gradient(rgba(45, 35, 30, 0.35),
+        rgba(45, 35, 30, 0.35)),
+        url('https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-block;
+    padding: 13px 32px;
+    background: #B77C72;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+    border: 1px solid #B77C72;
+}
+
+.btn:hover {
+    background: #8E5D55;
+    transform: translateY(-3px);
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+    text-align: center;
+    padding-top: 65px;
+}
+
+.section-title h2 {
+    font-size: 34px;
+    color: #8E5D55;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    color: #8A7C76;
+}
+
+/* ===== Products Section ===== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 28px;
+    padding: 45px 8%;
+}
+
+.product-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(90, 60, 50, 0.06);
+    transition: 0.4s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(90, 60, 50, 0.13);
+}
+
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 18px 10px 8px;
+    font-size: 20px;
+}
+
+.product-card p {
+    color: #9B7168;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #B77C72;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.product-card .btn {
+    margin-top: 8px;
+    padding: 10px 25px;
+}
+
+/* ===== About Section ===== */
+.about {
+    padding: 70px 10%;
+    text-align: center;
+    background: #F1E5DF;
+}
+
+.about h2 {
+    color: #8E5D55;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #8E5D55;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin: 12px 0;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: #3D3330;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px;
+}
+
+.footer p {
+    color: #E8D8D1;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .product-grid {
+        padding: 30px 5%;
+        gap: 18px;
+    }
+}
